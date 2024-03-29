@@ -6,7 +6,7 @@ import (
 )
 
 func TestPrintVersion(t *testing.T) {
-	want := fmt.Sprintf("my app %s, commit %s, built at %s", version, commit, date)
+	want := fmt.Sprintf("golang-example-project %s, commit %s, built at %s", version, commit, date)
 	got := printVersion()
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
