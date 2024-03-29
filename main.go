@@ -8,7 +8,11 @@ import (
 	"os"
 )
 
-var version = "development"
+var (
+    version = "dev"
+    commit  = "none"
+    date    = "unknown"
+)
 
 type Crypto struct {
 	ID     string `json:"id"`
@@ -32,7 +36,7 @@ type CryptoData struct {
 }
 
 func printVersion() string {
-	version := fmt.Sprintf("Version: %s", version)
+	version := fmt.Sprintf("golang-example-project %s, commit %s, built at %s", version, commit, date)
 	fmt.Println(version)
 	return version
 }
