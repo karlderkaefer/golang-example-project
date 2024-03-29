@@ -4,7 +4,9 @@ branches:
 preset: angular
 plugins:
   - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
   - "@semantic-release/git"
   - - "@semantic-release/exec"
     - publishCmd: |
-        goreleaser release --clean
+        echo "${nextRelease.notes}" > /tmp/release-notes.md
+        goreleaser release --release-notes /tmp/release-notes.md --clean
