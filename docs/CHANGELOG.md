@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### 🚀 Features
+
+- Change user karlderkaefer[bot] by @karlderkaefer ([8352c6d](8352c6de4c437abd2938a249645c44a0f45380db))
+
+
 ## [1.3.0] - 2024-03-30
 
 ### 🚀 Features
