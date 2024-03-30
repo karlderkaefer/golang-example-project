@@ -20,18 +20,30 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: Generate Changelog
-        uses: docker://orhunp/git-cliff:2.1.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.CHANGELOG_GITHUB_TOKEN }}
+      - name: Generate a changelog
+        uses: orhun/git-cliff-action@v3
         with:
-          args: --output docs/CHANGELOG.md
+          config: cliff.toml
+          args: --verbose
+        env:
+          OUTPUT: CHANGELOG.md
+      
       - name: Commit files
+        id: commit
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git commit -a -m "chore(docs): update changelog"
+          if git diff --quiet; then
+            echo "No changes to commit."
+            echo "hasdiff=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Changes detected."
+            echo "hasdiff=true" >> "$GITHUB_OUTPUT"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add docs/CHANGELOG.md
+            git commit -m "chore(docs): update changelog"
+          fi
       - name: Push changes
+        if: ${{ steps.commit.outputs.hasdiff == 'true' }}
         uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.CHANGELOG_GITHUB_TOKEN }}
