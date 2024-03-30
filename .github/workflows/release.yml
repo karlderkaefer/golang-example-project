@@ -29,8 +29,8 @@ jobs:
           args: --output docs/CHANGELOG.md
       - name: Commit files
         run: |
-          git config --local user.email "karlderkaefer@users.noreply.github.com"
-          git config --local user.name "karlderkaefer[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git commit -a -m "chore(docs): update changelog"
       - name: Push changes
         uses: ad-m/github-push-action@v0.8.0
