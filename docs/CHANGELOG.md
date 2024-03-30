@@ -6,6 +6,13 @@ All notable changes to this project will be documented in this file.
 
 ### 🚀 Features
 
+- Change user to github by @karlderkaefer ([e9f69f3](e9f69f363f691bba3c16925240c4b196b09f6ec8))
+
+
+## [1.4.0] - 2024-03-30
+
+### 🚀 Features
+
 - Change user karlderkaefer[bot] by @karlderkaefer ([8352c6d](8352c6de4c437abd2938a249645c44a0f45380db))
 
 
