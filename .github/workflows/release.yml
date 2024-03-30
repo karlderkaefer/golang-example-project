@@ -21,11 +21,11 @@ jobs:
         with:
           fetch-depth: 0
       - name: Generate Changelog
-        uses: docker://githubchangeloggenerator/github-changelog-generator:v1.16.4
+        uses: docker://orhunp/git-cliff:2.1.2
         env:
-          CHANGELOG_GITHUB_TOKEN: ${{ secrets.CHANGELOG_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CHANGELOG_GITHUB_TOKEN }}
         with:
-          args: --user ${GITHUB_REPOSITORY%/*} --project ${GITHUB_REPOSITORY#*/}
+          args: --output docs/CHANGELOG.md
       - name: Commit files
         run: |
           git config --local user.email "changelog[bot]@users.noreply.github.com"
