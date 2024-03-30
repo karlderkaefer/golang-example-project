@@ -36,7 +36,6 @@ jobs:
         uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.CHANGELOG_GITHUB_TOKEN }}
-          force_with_lease: true
   goreleaser:
     runs-on: ubuntu-latest
     permissions:
