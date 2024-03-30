@@ -4,9 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+
+## [1.5.0] - 2024-03-30
+
 ### 🚀 Features
 
 - Change user to github by @karlderkaefer ([e9f69f3](e9f69f363f691bba3c16925240c4b196b09f6ec8))
+
+### 🐛 Bug Fixes
+
+- *(docs)* Test change by @karlderkaefer ([35aca4e](35aca4e69df77e4ffe389012499e58f95e1f0f25))
+- *(ci)* Disable release on branch by @karlderkaefer ([259ebc5](259ebc54acda2629bf2da3bb6e910c3cb6e11e43))
 
 
 ## [1.4.0] - 2024-03-30
