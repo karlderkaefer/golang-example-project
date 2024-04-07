@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.21.2] - 2024-04-07
+
+### 🐛 Bug Fixes
+
+- Finish docker by @karlderkaefer ([b29baae](b29baae1bb40c6139797bea232dc69ce0d1dceb0))
+
+
 ## [1.21.1] - 2024-04-07
 
 ### 🐛 Bug Fixes
