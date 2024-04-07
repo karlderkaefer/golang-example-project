@@ -4,9 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+
+## [1.7.0] - 2024-04-07
+
 ### 🚀 Features
 
 - Test change on feature 2 by @karlderkaefer ([bc76755](bc7675544efa375b091c64cbe19154b4accef68f))
+- Add docker release by @karlderkaefer ([853a999](853a999689500b80faf8fd4bf1d735b13565b601))
 
 
 ## [1.6.0] - 2024-04-07
