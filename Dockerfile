@@ -7,7 +7,9 @@
 ################################################################################
 # Create a stage for building the application.
 ARG GO_VERSION=1.22
-FROM golang:${GO_VERSION} AS build
+FROM --platform=$BUILDPLATFORM golang:${GO_VERSION} AS build
+ARG TARGETPLATFORM
+ARG BUILDPLATFORM
 WORKDIR /src
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
