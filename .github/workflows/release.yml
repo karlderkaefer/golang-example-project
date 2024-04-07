@@ -15,6 +15,11 @@ jobs:
     # run only on tag events
     runs-on: ubuntu-latest
     steps:
+      # print the github event and the tag
+      - name: Print GitHub event and tag
+        run: |
+          echo "GitHub event: $GITHUB_EVENT_NAME"
+          echo "Tag: $GITHUB_REF"
       - name: Checkout code
         uses: actions/checkout@v4
         with:
