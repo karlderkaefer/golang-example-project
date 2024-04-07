@@ -2,6 +2,7 @@ branches:
   - master
   - main
 preset: angular
+repositoryUrl: https://github.com/karlderkaefer/golang-example-project
 plugins:
   - "@semantic-release/commit-analyzer"
   - - "@semantic-release/release-notes-generator"
