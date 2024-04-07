@@ -85,4 +85,3 @@ jobs:
           extra_plugins: |
             @semantic-release/git
             @semantic-release/exec
-  

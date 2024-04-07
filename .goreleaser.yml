@@ -33,22 +33,22 @@ changelog:
       - "^ci:"
       - "^docs:"
       - "^test:"
-# dockers:
-# - image_templates:
-#   - 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}-amd64'
-#   use: buildx
-#   build_flag_templates:
-#   - "--pull"
-#   - "--platform=linux/amd64"
-# - image_templates:
-#   - 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}-arm64'
-#   use: buildx
-#   build_flag_templates:
-#   - "--pull"
-#   - "--platform=linux/arm64"
-#   goarch: arm6
-# docker_manifests:
-# - name_template: 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}'
-#   image_templates:
-#   - 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}-amd64'
-#   - 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}-arm64'
+dockers:
+- image_templates:
+  - 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}-amd64'
+  use: buildx
+  build_flag_templates:
+  - "--pull"
+  - "--platform=linux/amd64"
+- image_templates:
+  - 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}-arm64'
+  use: buildx
+  build_flag_templates:
+  - "--pull"
+  - "--platform=linux/arm64"
+  goarch: arm6
+docker_manifests:
+- name_template: 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}'
+  image_templates:
+  - 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}-amd64'
+  - 'ghcr.io/karlderkaefer/golang-example-project:{{ .Tag }}-arm64'
