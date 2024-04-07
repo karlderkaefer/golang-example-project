@@ -6,6 +6,13 @@ All notable changes to this project will be documented in this file.
 
 ### 🚀 Features
 
+- Test release from pat3 by @karlderkaefer ([325b4dd](325b4dddc2773d7dbbec05751d55a9b06cf4ef70))
+
+
+## [1.10.0] - 2024-04-07
+
+### 🚀 Features
+
 - Test release from pat2 by @karlderkaefer ([e65c1c3](e65c1c31b2b9bdb05ef9681dceafe7ed95c3d500))
 
 
