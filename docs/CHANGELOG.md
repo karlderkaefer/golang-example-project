@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🚀 Features
+
+- Test release from pat by @karlderkaefer ([43d58e4](43d58e4a3e1d6df77c388075993f8b0c9d9f5b34))
+
+
+## [1.8.0] - 2024-04-07
+
 
 ## [1.7.0] - 2024-04-07
 
