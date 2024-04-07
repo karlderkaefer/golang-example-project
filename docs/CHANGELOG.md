@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### 🚀 Features
 
 - Check tag release 2 by @karlderkaefer ([ba6a7f8](ba6a7f846e6039364ba09ad1e733f64aa5005dad))
+- Check tag release 3 by @karlderkaefer ([babef46](babef46a415b2c0dbc82b15b36cf97ef3a41beab))
 
 
 ## [1.12.0] - 2024-04-07
