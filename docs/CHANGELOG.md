@@ -4,6 +4,34 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🚀 Features
+
+- Test change on feature 2 by @karlderkaefer ([bc76755](bc7675544efa375b091c64cbe19154b4accef68f))
+
+
+## [1.6.0] - 2024-04-07
+
+### 🚀 Features
+
+- Test change on feature by @karlderkaefer ([538fb70](538fb70a43558bb145a86fbc24afddbfb4275f9d))
+
+
+## [1.5.3] - 2024-04-07
+
+### 🐛 Bug Fixes
+
+- *(docs)* Test change 3 by @karlderkaefer ([7659951](76599518787deb0d12d3bb6a6c73ce46dd03d224))
+
+
+## [1.5.2] - 2024-03-30
+
+### 🐛 Bug Fixes
+
+- *(ci)* Do not push if no changes by @karlderkaefer ([f84dcfe](f84dcfe77f563e1c8dd0afef5a16189913a08954))
+
+
+## [1.5.1] - 2024-03-30
+
 
 ## [1.5.0] - 2024-03-30
 
