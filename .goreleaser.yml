@@ -22,8 +22,7 @@ archives:
       {{- .Os }}_
       {{- .Arch }}{{ with .Arm }}v{{ . }}{{ end }}
     files:
-      # include the binary only
-      - dist/{{ .ProjectName }}{{ if ne .Os "windows" }}{{ if .Arm }}_arm{{ .Arm }}{{ else }}_{{ .Arch }}{{ end }}{{ end }}
+      - none*
 checksum:
   name_template: "checksums.txt"
 snapshot:
