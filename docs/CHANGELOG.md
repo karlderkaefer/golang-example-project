@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.21.3] - 2024-04-14
+
+### 🐛 Bug Fixes
+
+- Run only on repo owner by @karlderkaefer ([11e16bc](11e16bc923c6aba9e5bca8f3b1ad4a2f480cc896))
+
+
 ## [1.21.2] - 2024-04-07
 
 ### 🐛 Bug Fixes
