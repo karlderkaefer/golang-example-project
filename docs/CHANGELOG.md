@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.21.12] - 2024-04-14
+
+### 🐛 Bug Fixes
+
+- *(ci)* Use gz format by @karlderkaefer ([87bc187](87bc1870b524e8c20f1e8e30dc325211acfaf0a6))
+
+
+## [1.21.11] - 2024-04-14
+
+### 🐛 Bug Fixes
+
+- *(ci)* Use gz format by @karlderkaefer ([afe4452](afe4452d31f29702a0b141d85b4389d1d94962c6))
+
+
+## [1.21.10] - 2024-04-14
+
+### 🐛 Bug Fixes
+
+- *(ci)* Use gz format by @karlderkaefer ([2d6672c](2d6672c6aad8fe7e2e74061873fbe8875f5f4d40))
+
+
+## [1.21.9] - 2024-04-14
+
+### 🐛 Bug Fixes
+
+- *(ci)* Use gz format by @karlderkaefer ([086a6e3](086a6e3c54346bbd0a0f41cc7a09156fff5eca90))
+
+
+## [1.21.8] - 2024-04-14
+
+### 🐛 Bug Fixes
+
+- *(ci)* Use gz format by @karlderkaefer ([1e9069f](1e9069f6d09552dbf52bf78d6d09a0017a6024b3))
+
+
 ## [1.21.7] - 2024-04-14
 
 ### 🐛 Bug Fixes
