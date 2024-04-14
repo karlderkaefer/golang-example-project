@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.21.5] - 2024-04-14
+
+### 🐛 Bug Fixes
+
+- Update cve reporting by @karlderkaefer ([773dd96](773dd96e4d4cefc7886146bca0262247544460bc))
+
+
+## [1.21.4] - 2024-04-14
+
+### 🐛 Bug Fixes
+
+- Update cve reporting by @karlderkaefer ([9788564](9788564dab0ad1167c281998b3d664871bfd841f))
+
+
 ## [1.21.3] - 2024-04-14
 
 ### 🐛 Bug Fixes
