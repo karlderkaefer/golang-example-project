@@ -53,21 +53,17 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          id: upload-sarif
-          if: ${{ github.event_name != 'pull_request_target' }}
-          uses: github/codeql-action/upload-sarif@v3
-          with:
-            sarif_file: sarif.output.json
-            - uses: docker/build-push-action@v5
-            with:
-              context: .
-              # push only on main or on tags
-              push: ${{ (github.ref_name == 'main' || startsWith(github.ref, 'refs/tags/')) && github.repository_owner == 'karlderkaefer' }}
-              platforms: linux/amd64,linux/arm64
-              cache-from: type=gha
-              cache-to: type=gha,mode=max
-              tags: ${{ steps.meta.outputs.tags }}
-              labels: ${{ steps.meta.outputs.labels }}
+     
+      - uses: docker/build-push-action@v5
+        with:
+          context: .
+          # push only on main or on tags
+          push: ${{ (github.ref_name == 'main' || startsWith(github.ref, 'refs/tags/')) && github.repository_owner == 'karlderkaefer' }}
+          platforms: linux/amd64,linux/arm64
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
       - name: Analyze for critical and high CVEs
         id: docker-scout-cves
         if: ${{ github.event_name != 'pull_request_target' }}
@@ -78,4 +74,8 @@ jobs:
           sarif-file: sarif.output.json
           summary: true
       - name: Upload SARIF result
-              
+        id: upload-sarif
+        if: ${{ github.event_name != 'pull_request_target' }}
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: sarif.output.json
