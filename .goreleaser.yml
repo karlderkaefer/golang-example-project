@@ -21,6 +21,8 @@ archives:
       {{ .ProjectName }}_
       {{- .Os }}_
       {{- .Arch }}{{ with .Arm }}v{{ . }}{{ end }}
+    files:
+      - "{{ .Binary }}"  # Include only the binary itself
 checksum:
   name_template: "checksums.txt"
 snapshot:
